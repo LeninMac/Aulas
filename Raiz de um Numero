@@ -1,0 +1,17 @@
+#include <stdio.h>
+main(){
+	int inteiro,valortotal,numeroraiz,numeroimpares;
+do{
+	inteiro,valortotal=1,numeroraiz=1,numeroimpares=0;
+	printf("\nDigite um valor a ser calculado a raiz: ");
+	scanf("%d", &inteiro);
+	
+	while(inteiro>=valortotal){
+		numeroraiz=numeroraiz+2;
+		valortotal=valortotal+numeroraiz;
+		numeroimpares++;
+		
+	}
+	printf("A raiz aproximada de %d eh %d\n", inteiro, numeroimpares);
+}while (inteiro>0);
+}
